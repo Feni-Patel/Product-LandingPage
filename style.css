@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+    background: linear-gradient(90deg, #b7b18a 50%, #af7114 50%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.cart{
+    background-color: #dddddd;
+    width: 90%;
+    height: 90vh;
+}
+.navbar .logo{
+    width: 60px;
+    height: 60px;
+    background-color: transparent ;
+    border: 3px solid #af7114;
+    border-radius: 50%;
+    border-right-color: transparent;
+    position: relative;
+}
+.navbar .logo::before{
+    content: "Beautify";
+    color: black;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -50%);
+    font-family: 'Dancing Script', cursive;
+}
+.navbar{
+    width: 90%;
+    margin: auto;
+    height: 15vh;
+}
+.navbar  , .navlist{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.navlist li{
+    list-style-type: none;
+    padding: 20px;
+}
+.navlist a{
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    position: relative;
+}
+.navlist a::before{
+    content:"";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: .5s ease-in-out;
+}
+.navlist a:hover::before{
+    width: 100%;
+}
+.feni{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.feni img{
+    width: 45vw;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    border-left: 4px solid #af4814;
+    padding: 20px 50px;
+}
+.content h3{
+    color: #af7114 ;
+    font-size: 20px;
+    text-transform: uppercase; 
+    letter-spacing: 5px;
+}
+.content h1{
+    color: #af4814;
+    font-size: 50px;
+}
+.content p{
+    color: black;
+    font-size: 18px;
+    line-height: 30px;
+
+}
+.content button{
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    background-color: #af7114;
+    cursor: pointer;
+
+}
+.content button:hover{
+    background-color: white;
+    color: #af7114;
+}
+
